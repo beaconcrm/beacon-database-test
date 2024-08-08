@@ -11,7 +11,7 @@ Lets run some queries! This repo sets up a small database and lets you run queri
 
 ## Usage
 
-To run a query:
+Write your query in `query.sql` and then:
 
 ```
 npm run start
