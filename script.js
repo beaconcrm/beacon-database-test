@@ -1,11 +1,6 @@
+const fs = require('fs');
 const db = require('./setup');
-
-/* 
-* INSERT YOUR QUERY HERE ********************
-*/
-const query = `
-SELECT * FROM users;
-`
+const query = fs.readFileSync(`${__dirname}/query.sql`).toString();
 
 db.serialize(() => {
 
